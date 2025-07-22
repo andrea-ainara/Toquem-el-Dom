@@ -1,0 +1,44 @@
+article {
+    .instrument-rowL {
+        display: grid;
+        grid-template-columns: 7% 7% 7%;
+        gap: 3px;
+        justify-content: center;
+        justify-items: center;
+    }
+    .instrument-rowS {
+        display: grid;
+        grid-template-columns: 7% 7%;
+        gap: 3px;
+        justify-content: center;
+        justify-items: center;
+    }
+    button {
+        width: 85px;
+        height: 67px;
+        padding: 0;
+        border-radius: 45px;
+        border-color: #795e3f;
+        border-style: solid;
+        border-width: 10px;
+        color: white;
+        background-color: #bf8035;
+    }
+}
+.noteActve {
+    background-color: #ed3c10;
+}
+footer {
+    div {
+        display: flex;
+        justify-content: stretch;
+        border-width: 7px;
+        border-style: solid;
+        border-color: yellow;
+    }
+    #contents {
+        display: grid;
+        grid-template-columns: 25% 40% 25%;
+        justify-items: center;
+    }
+}

@@ -1,12 +1,28 @@
 
-  const button = document.getElementById("Button1");
-  const audio = document.getElementById("Audio");
+  
 
-function soundbass(){
-    button.addEventListener("click", function() {
-        audio.play(); 
+  const button = document.getElementById("button1");
+  const audio1 = document.getElementById("Audio1");
+function soundbass1(){
+  button.addEventListener("click", function() {
+        audio1.play(); 
     });
     
 }
 
   
+
+//on key press
+document.addEventListener("keydown", function(event) {
+    switch (event.key.toUpperCase()) {
+        case "4":
+            document.getElementById("audio1").play();
+            activeColor(forD3);
+            break;
+
+
+
+
+        
+    }
+})

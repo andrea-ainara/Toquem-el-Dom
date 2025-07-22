@@ -1,6 +1,4 @@
 
-  
-
   const button = document.getElementById("button1");
   const audio1 = document.getElementById("Audio1");
 function soundbass1(){

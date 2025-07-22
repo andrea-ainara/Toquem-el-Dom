@@ -29,32 +29,32 @@ document.getElementById("C5note").addEventListener("click", function() {
 })
 // on key press
 document.addEventListener("keydown", function(event) {
-    switch (event.key.toLowerCase() && event.key.toUpperCase()) {
-        case "U" || "u":
+    switch (event.key.toUpperCase()) {
+        case "U":
             document.getElementById("D3audio").play();
             activeColor(forD3);
             break;
-        case "H" || "h":
+        case "H":
             document.getElementById("A3audio").play();
             activeColor(forA3);
             break;
-        case "I" || "i":
+        case "I":
             document.getElementById("C4audio").play();
             activeColor(forC4);
             break;
-        case "J" || "j":
+        case "J":
             document.getElementById("D4audio").play();
             activeColor(forD4);
             break;
-        case "N" || "n":
+        case "N":
             document.getElementById("E4audio").play();
             activeColor(forE4);
             break;
-        case "K" || "k":
+        case "K":
             document.getElementById("A4audio").play();
             activeColor(forA4);
             break;
-        case "M" || "m":
+        case "M":
             document.getElementById("C5audio").play();
             activeColor(forC5);
             break;

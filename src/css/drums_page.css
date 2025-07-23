@@ -85,6 +85,21 @@ main{
         text-align: left;
     }
 
+    article{
+        display: flex;
+        flex-direction: column;
+    }
+
+    div{
+        margin: -30px;
+        padding: 0px;
+    }
+
+    img{
+        margin: -20px;
+        padding: 0px;
+    }
+
     #instrument_section{
         background-color: #932C2C;
         display: flex;
@@ -104,6 +119,52 @@ main{
         margin: 20px 270px;
         padding: 25px 0px;
         border-radius: 30px;
+    }
+
+    .drum_piece{
+        width: 52%;
+    }
+
+    #hats_drums{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    
+    #toms_drums{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    #hihat_drums{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+    }
+
+    #snare_drums{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    #kick_drums{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    #clap_drums{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
     }
 
 }

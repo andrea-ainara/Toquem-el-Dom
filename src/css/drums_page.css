@@ -58,17 +58,31 @@ main{
         color: #FBC34B;
         font-family: "Jersey 10";
         font-weight: normal;
+        font-size: 60px;
+        font-weight: 400;
+        padding-top: 5px;
+        margin: 0;
     }
 
     h2{
         color: #932C2C;
         font-family: "Jersey 10";
         font-weight: normal;
+        font-size: 60px;
+        font-weight: 400;
+        padding-top: 5px;
+        margin: 0;
     }
 
     p{
         color: #2F343A;
         font-family: "Jolly Lodger";
+        font-size: 32px;
+        padding-bottom: 8px;
+        margin-bottom: 0;
+        padding-top: 5px;
+        margin: 0px 10%;
+        text-align: left;
     }
 
     #instrument_section{
@@ -77,6 +91,9 @@ main{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin: 20px 20px;
+        padding: 25px 0px;
+        border-radius: 30px;
     }
     #info_section{
         background-color: #FBC34B;
@@ -84,6 +101,9 @@ main{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin: 20px 270px;
+        padding: 25px 0px;
+        border-radius: 30px;
     }
 
 }

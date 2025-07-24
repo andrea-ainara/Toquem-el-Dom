@@ -30,7 +30,7 @@ body {
 
 .title {
   color: #fff;
-  font-size: 24px;
+  font-size: 84px;
 }
 
 .resources {
@@ -44,10 +44,10 @@ body {
 }
 
 .line {
-  height: 4px;
-  width: 120px;
+  height: 7px;
+  width: 700px;
   background-color: #E5B94D;
-  margin-top: 5px;
+  margin-top: 50px;
   margin-left: auto;
 }
 

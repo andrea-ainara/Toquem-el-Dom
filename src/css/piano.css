@@ -1,0 +1,68 @@
+body {
+  background-color: #822727; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.piano {
+  position: relative;
+  display: flex;
+}
+
+.white-key {
+  width: 60px;
+  height: 250px;
+  background: #f5f5f5;
+  border: none;
+  border-radius: 4px;
+  margin: 0 1px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 0;
+  cursor: pointer;
+}
+
+.black-key {
+  width: 40px;
+  height: 150px;
+  background: #000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  padding: 0 2px;
+}
+
+.note {
+  text-align: center;
+  line-height: 1.2;
+}
+.note small {
+  font-size: 11px;
+  color: #ccc;
+}
+
+
+.black-key:nth-of-type(9)  { left: 45px; }
+.black-key:nth-of-type(10) { left: 105px; }
+.black-key:nth-of-type(11) { left: 165px; }
+.black-key:nth-of-type(12) { left: 285px; }
+.black-key:nth-of-type(13) { left: 345px; }

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Manrope:wght@200..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Jolly+Lodger&family=Manrope:wght@200..800&display=swap');
+
+
+body {
+    background-color: #2F343A;
+}
+
+.panflute-images {
+
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #932C2C;
+    margin: 20px;
+    height: 700px;
+
+    button:active,
+    .btnActive {
+        background-color: rgb(50, 228, 14);
+        transform: translate(2px);
+
+
+    }
+}
+
+
+
+
+
+
+button {
+    background-color: transparent;
+    border: transparent;
+    gap: 0px;
+    border-width: 2px;
+    padding: 1px;
+}
+
+
+
+.main-page {
+    background-color: #932C2C;
+    text-align: center;
+    color: #FBC34B;
+    margin: 30px;
+    border-radius: 20px;
+
+}
+
+.panflute-texts {
+    font-family: "Jolly Lodger";
+    background-color: #FBC34B;
+    margin: 30px;
+    border-radius: 20px;
+    text-align: center;
+    height: 300px;
+    font-size: 35px;
+    padding: 50px;
+}
+
+h2 {
+    text-align: center;
+    color: #932C2C;
+    font-size: 50px;
+    font-family: "Jersey 10";
+    padding-bottom: 40px;
+
+}
+
+h1 {
+    height: 80px;
+    font-size: 60px;
+    padding-top: 36px;
+    font-family: "Jersey 10";
+}

@@ -88,6 +88,7 @@ main{
     article{
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 
     div{
@@ -96,7 +97,7 @@ main{
     }
 
     img{
-        margin: -20px;
+        margin: 0px;
         padding: 0px;
     }
 
@@ -106,8 +107,9 @@ main{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: 20px 20px;
-        padding: 25px 0px;
+        width: 60%;
+        margin: 20px;
+        padding: 2% 4%;
         border-radius: 30px;
     }
     #info_section{
@@ -116,19 +118,20 @@ main{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: 20px 270px;
+        margin: 2% 17%;
         padding: 25px 0px;
         border-radius: 30px;
     }
 
     .drum_piece{
-        width: 52%;
+        border-radius: 20%;
     }
 
     #hats_drums{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin: 2% 10% -11%;
 
     }
     
@@ -136,6 +139,8 @@ main{
         display: flex;
         flex-direction: row;
         justify-content: center;
+        align-items: center;
+        margin: 0% 0% -15%;
 
     }
 
@@ -143,13 +148,23 @@ main{
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
+        margin: 0% 0% -5%;
 
     }
 
     #snare_drums{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
+        margin: 0% 35% -24% 0%;
+
+    }
+
+    #floor_tom_drums{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0% 0% -8% 47%;
 
     }
 
@@ -157,6 +172,7 @@ main{
         display: flex;
         flex-direction: row;
         justify-content: center;
+        margin: 0% 0% -15% 7%;
 
     }
 
@@ -164,12 +180,58 @@ main{
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+        margin: 0% 0% 0% 0%;
 
     }
 
+        #cymbal_drum_img{
+            width: 190px;
+            height: 190px;
+        }
+        #ride_hat_drum_img{
+            width: 190px;
+            height: 190px;
+        }
+
+        #high_tom_drum_img{
+            width: 135px;
+            height: 135px;
+        }
+
+        #mid_tom_drum_img{
+            width: 175px;
+            height: 175px;
+        }
+
+        #hihat_drum_img{
+            width: 135px;
+            height: 135px;
+        }
+
+        #snare_drum_img{
+            width: 175px;
+            height: 175px;
+        }
+
+        #floor_tom_drum_img{
+            width: 180px;
+            height: 180px;
+        }
+
+        #kick_drum_img{
+            width: 200px;
+            height: 200px;
+        }
+
+        #clap_drum_img{
+            width: 95px;
+            height: auto;
+        }
+
+
 }
 
-footer {
+footer{
     background-color: #808080;
     padding-top: 26px;
     text-align: center;

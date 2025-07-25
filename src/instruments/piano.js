@@ -1,4 +1,3 @@
-
 const noteMap = {
   "Do": "do",
   "Do#": "do#",
@@ -13,7 +12,6 @@ const noteMap = {
   "La#": "la#",
   "Si": "si",
 };
-
 
 const keyToNote = {
   "a": "Do",
@@ -30,20 +28,22 @@ const keyToNote = {
   "j": "Si",
 };
 
-
 function playNote(note) {
   const noteFile = noteMap[note];
   if (!noteFile) return;
 
   const audio = new Audio(`sounds/${noteFile}.wav`);
+  audio.currentTime = 0;
   audio.play();
 }
-
 
 document.querySelectorAll('.piano button').forEach(button => {
   button.addEventListener('click', () => {
     const note = button.dataset.note;
     playNote(note);
+
+    button.classList.add('active');
+    setTimeout(() => button.classList.remove('active'), 100);
   });
 });
 
@@ -52,7 +52,6 @@ document.addEventListener('keydown', (event) => {
   const note = keyToNote[key];
   if (note) {
     playNote(note);
-
 
     const btn = document.querySelector(`[data-note="${note}"]`);
     if (btn) {

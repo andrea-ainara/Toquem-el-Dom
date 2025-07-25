@@ -127,6 +127,10 @@ main{
         border-radius: 20%;
     }
 
+    .drum_piece:hover{
+        background-color:#e42727
+    }
+
     #hats_drums{
         display: flex;
         flex-direction: row;
@@ -188,6 +192,7 @@ main{
             width: 190px;
             height: 190px;
         }
+
         #ride_hat_drum_img{
             width: 190px;
             height: 190px;
@@ -226,6 +231,11 @@ main{
         #clap_drum_img{
             width: 95px;
             height: auto;
+            border-radius: 25px;
+        }
+
+        #clap_drum_img:hover{
+            background-color: #e42727;
         }
 
 

@@ -23,6 +23,9 @@ article {
             padding-top: 5px;
             margin: 0;
         }
+        a {
+            text-decoration: none;
+        }
         p {
             font-size: 42px;
             font-family: "Jolly Lodger";

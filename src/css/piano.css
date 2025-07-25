@@ -39,6 +39,7 @@ body {
   border: none;
   border-radius: 6px;
   position: absolute;
+  top: 0;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -50,6 +51,12 @@ body {
   padding: 0 2px;
 }
 
+.black-key[data-note="Do#"] { left: 45px; }
+.black-key[data-note="Re#"] { left: 105px; }
+.black-key[data-note="Fa#"] { left: 225px; }
+.black-key[data-note="Sol#"] { left: 285px; }
+.black-key[data-note="La#"] { left: 345px; }
+
 .note {
   text-align: center;
   line-height: 1.2;
@@ -60,8 +67,9 @@ body {
 }
 
 
-.black-key:nth-of-type(9)  { left: 45px; }
-.black-key:nth-of-type(10) { left: 105px; }
-.black-key:nth-of-type(11) { left: 165px; }
-.black-key:nth-of-type(12) { left: 285px; }
-.black-key:nth-of-type(13) { left: 345px; }
+.white-key.active,
+.black-key.active {
+  background-color: #ccc;
+  transform: scale(0.97);
+  transition: all 0.1s ease;
+}

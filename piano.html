@@ -3,10 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>
-    Teclado Musical
-  </title>
-
+  <title>Teclado Musical</title>
   <link rel="stylesheet" href="./src/css/piano.css">
 </head>
 
@@ -14,112 +11,59 @@
   <main>
     <section class="piano" aria-label="Teclado musical" role="region">
 
-       <h1 
-          class="visually-hidden">Teclado Musical Interactivo
-       </h1>
+      <h1 class="visually-hidden">TECLADO MUSICAL INTERACTIVO</h1>
 
-      <button 
-         class="white-key" id="Do" aria-label="Nota Do">Do
+      <button class="white-key" id="DO" aria-label="NOTA DO">DO</button>
+
+      <button class="black-key" id="DOS" aria-label="NOTA DO SOSTENIDO">
+        <span class="note">DOS<br></span>
       </button>
 
-      <button
-          class="black-key" id="DoS" aria-label="Nota Do sostenido">
-        <span 
-         class="note">Do#<br>
-        </span>
+      <button class="white-key" id="RE" aria-label="NOTA RE">RE</button>
+
+      <button class="black-key" id="RES" aria-label="NOTA RE SOSTENIDO">
+        <span class="note">RES<br></span>
       </button>
 
-      <button class="white-key" id="Re" aria-label="Nota Re">Re</button>
-      <button class="black-key" id="Re#" aria-label="Nota Re sostenido">
-        <span 
-          class="note">Re#<br>
-        </span>
+      <button class="white-key" id="MI" aria-label="NOTA MI">MI</button>
+
+      <button class="white-key" id="FA" aria-label="NOTA FA">FA</button>
+
+      <button class="black-key" id="FAS" aria-label="NOTA FA SOSTENIDO">
+        <span class="note">FAS<br></span>
       </button>
 
-      <button 
-      class="white-key" id="Mi" aria-label="Nota Mi">Mi
+      <button class="white-key" id="SOL" aria-label="NOTA SOL">SOL</button>
+
+      <button class="black-key" id="SOLS" aria-label="NOTA SOL SOSTENIDO">
+        <span class="note">SOLS<br></span>
       </button>
 
-      <button
-       class="white-key" id="Fa" aria-label="Nota Fa">Fa
+      <button class="white-key" id="LA" aria-label="NOTA LA">LA</button>
+
+      <button class="black-key" id="LAS" aria-label="NOTA LA SOSTENIDO">
+        <span class="note">LAS<br></span>
       </button>
 
-      <button class="black-key" id="Fa#" aria-label="Nota Fa sostenido">
-        <span 
-        class="note">Fa#<br>
-        </span>
-      </button>
-
-      <button
-       class="white-key" id="Sol" aria-label="Nota Sol">Sol
-      </button>
-
-      <button class="black-key" id="Sol#" aria-label="Nota Sol sostenido">
-        <span class="note">Sol#<br></span>
-      </button>
-
-      <button
-       class="white-key" id="La" aria-label="Nota La">La
-      </button>
-
-      <button class="black-key" id="La#" aria-label="Nota La sostenido">
-        <span class="note">La#<br></span>
-      </button>
-
-      <button 
-      class="white-key" id="Si" aria-label="Nota Si">Si
-      </button>
+      <button class="white-key" id="SI" aria-label="NOTA SI">SI</button>
 
     </section>
   </main>
 
-     <audio 
-       id="Do" src="./src/sounds/piano/do.wav">
-      </audio>
+  <audio id="DO" src="./src/sounds/piano/DO.wav"></audio>
+  <audio id="DOS" src="./src/sounds/piano/DOS.wav"></audio>
+  <audio id="RE" src="./src/sounds/piano/RE.wav"></audio>
+  <audio id="RES" src="./src/sounds/piano/RES.wav"></audio>
+  <audio id="MI" src="./src/sounds/piano/MI.wav"></audio>
+  <audio id="FA" src="./src/sounds/piano/FA.wav"></audio>
+  <audio id="FAS" src="./src/sounds/piano/FAS.wav"></audio>
+  <audio id="SOL" src="./src/sounds/piano/SOL.wav"></audio>
+  <audio id="SOLS" src="./src/sounds/piano/SOLS.wav"></audio>
+  <audio id="LA" src="./src/sounds/piano/LA.wav"></audio>
+  <audio id="LAS" src="./src/sounds/piano/LAS.wav"></audio>
+  <audio id="SI" src="./src/sounds/piano/SI.wav"></audio>
 
-      <audio 
-         id="Do#" src="./src/sounds/piano/dosostenido.wav">
-       </audio>
-
-    <audio
-    id="Re" src="./src/sounds/piano/Re.wav">
-    </audio>
-
-   <audio
-     id="Mi" src="./src/sounds/piano/MI.wav">
-    </audio>
-
-    <audio 
-    id="Fa" src="./src/sounds/piano/MIb.wav">
-    </audio>
-
-    <audio
-     id="Fa#" src="./src/sounds/piano/FA_piano-f.wav">
-    </audio>
-
-    <audio 
-     id="Sol" src="./src/sounds/piano/FAsostenido.wav">
-    </audio>
-    <audio 
-     id="Sol#" src="./src/sounds/piano/SOL.wav">
-     </audio>
-
-      <audio 
-      id="La" src="./src/sounds/piano/SOL_Sostenido.wav">
-      </audio>
-
-     <audio 
-       id="La#" src="./src/sounds/piano/si.wav">
-      </audio>
-
-        <audio 
-          id="Si" src="./src/sounds/piano/SIb.wav">
-        </audio>
-
-           <script 
-              src="./src/instruments/piano.js">
-            </script>
+  <script src="./src/instruments/piano.js"></script>
 
 </body>
-
 </html>

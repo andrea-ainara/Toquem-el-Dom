@@ -2,7 +2,6 @@ function vincularnota(buttonId) {
   const button = document.getElementById(buttonId);
   const audio = document.querySelector(`audio#${buttonId}`);
 
-  console.log(button);
   if (button && audio) {
     button.addEventListener("click", () => {
       audio.currentTime = 0;
@@ -12,11 +11,16 @@ function vincularnota(buttonId) {
     });
   }
 }
-vincularnota("Do");
-vincularnota("Do#");
-vincularnota("Re");
-vincularnota("Re");
-vincularnota("Mi");
+
+
+const notas = [
+  "DO", "DOS", "RE", "RES", "MI",
+  "FA", "FAS", "SOL", "SOLS", "LA", "LAS", "SI"
+];
+
+notas.forEach(nota => vincularnota(nota));
+
+
 
 
 

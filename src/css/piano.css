@@ -71,11 +71,11 @@ body {
   user-select: none;
 }
 
-.black-key[id="Do#"] { left: 90px; }
-.black-key[id="Re#"] { left: 210px; }
-.black-key[id="Fa#"] { left: 440px; }
-.black-key[id="Sol#"] { left: 570px; }
-.black-key[id="La#"] { left: 690px; }
+.black-key[id="DOS"] { left: 90px; }
+.black-key[id="RES"] { left: 210px; }
+.black-key[id="FAS"] { left: 440px; }
+.black-key[id="SOLS"] { left: 570px; }
+.black-key[id="LAS"] { left: 690px; }
 
 .note {
   text-align: center;

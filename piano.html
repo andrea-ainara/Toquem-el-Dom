@@ -2,68 +2,50 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Teclado Musical</title>
-  <link rel="stylesheet" href="./src/css/piano.css">
+  <link rel="stylesheet" href="./src/css/piano.css" />
 </head>
-
 <body>
   <main>
     <section class="piano" aria-label="Teclado musical" role="region">
+      <h1 class="visually-hidden">Teclado Musical Interactivo</h1>
 
-      <h1 class="visually-hidden">TECLADO MUSICAL INTERACTIVO</h1>
+      <button class="white-key" id="DO" aria-label="Nota Do">Do</button>
+      <button class="black-key" id="DOS" aria-label="Nota Do sostenido">Do#</button>
 
-      <button class="white-key" id="DO" aria-label="NOTA DO">DO</button>
+      <button class="white-key" id="RE" aria-label="Nota Re">Re</button>
+      <button class="black-key" id="RES" aria-label="Nota Re sostenido">Re#</button>
 
-      <button class="black-key" id="DOS" aria-label="NOTA DO SOSTENIDO">
-        <span class="note">DOS<br></span>
-      </button>
+      <button class="white-key" id="MI" aria-label="Nota Mi">Mi</button>
 
-      <button class="white-key" id="RE" aria-label="NOTA RE">RE</button>
+      <button class="white-key" id="FA" aria-label="Nota Fa">Fa</button>
+      <button class="black-key" id="FAS" aria-label="Nota Fa sostenido">Fa#</button>
 
-      <button class="black-key" id="RES" aria-label="NOTA RE SOSTENIDO">
-        <span class="note">RES<br></span>
-      </button>
+      <button class="white-key" id="SOL" aria-label="Nota Sol">Sol</button>
+      <button class="black-key" id="SOLS" aria-label="Nota Sol sostenido">Sol#</button>
 
-      <button class="white-key" id="MI" aria-label="NOTA MI">MI</button>
+      <button class="white-key" id="LA" aria-label="Nota La">La</button>
+      <button class="black-key" id="LAS" aria-label="Nota La sostenido">La#</button>
 
-      <button class="white-key" id="FA" aria-label="NOTA FA">FA</button>
-
-      <button class="black-key" id="FAS" aria-label="NOTA FA SOSTENIDO">
-        <span class="note">FAS<br></span>
-      </button>
-
-      <button class="white-key" id="SOL" aria-label="NOTA SOL">SOL</button>
-
-      <button class="black-key" id="SOLS" aria-label="NOTA SOL SOSTENIDO">
-        <span class="note">SOLS<br></span>
-      </button>
-
-      <button class="white-key" id="LA" aria-label="NOTA LA">LA</button>
-
-      <button class="black-key" id="LAS" aria-label="NOTA LA SOSTENIDO">
-        <span class="note">LAS<br></span>
-      </button>
-
-      <button class="white-key" id="SI" aria-label="NOTA SI">SI</button>
-
+      <button class="white-key" id="SI" aria-label="Nota Si">Si</button>
     </section>
   </main>
 
-  <audio id="DO" src="./src/sounds/piano/DO.wav"></audio>
-  <audio id="DOS" src="./src/sounds/piano/DOS.wav"></audio>
-  <audio id="RE" src="./src/sounds/piano/RE.wav"></audio>
-  <audio id="RES" src="./src/sounds/piano/RES.wav"></audio>
-  <audio id="MI" src="./src/sounds/piano/MI.wav"></audio>
-  <audio id="FA" src="./src/sounds/piano/FA.wav"></audio>
-  <audio id="FAS" src="./src/sounds/piano/FAS.wav"></audio>
-  <audio id="SOL" src="./src/sounds/piano/SOL.wav"></audio>
-  <audio id="SOLS" src="./src/sounds/piano/SOLS.wav"></audio>
-  <audio id="LA" src="./src/sounds/piano/LA.wav"></audio>
-  <audio id="LAS" src="./src/sounds/piano/LAS.wav"></audio>
-  <audio id="SI" src="./src/sounds/piano/SI.wav"></audio>
+
+  <audio id="DO-audio" src="./src/sounds/piano/do.wav"></audio>
+  <audio id="DOS-audio" src="./src/sounds/piano/DOS.wav"></audio>
+  <audio id="RE-audio" src="./src/sounds/piano/RE.wav"></audio>
+  <audio id="RES-audio" src="./src/sounds/piano/RES.wav"></audio>
+  <audio id="MI-audio" src="./src/sounds/piano/MI.wav"></audio>
+  <audio id="FA-audio" src="./src/sounds/piano/FA.wav"></audio>
+  <audio id="FAS-audio" src="./src/sounds/piano/FAS.wav"></audio>
+  <audio id="SOL-audio" src="./src/sounds/piano/SOL.wav"></audio>
+  <audio id="SOLS-audio" src="./src/sounds/piano/SOLS.wav"></audio>
+  <audio id="LA-audio" src="./src/sounds/piano/LA.wav"></audio>
+  <audio id="LAS-audio" src="./src/sounds/piano/LAS.wav"></audio>
+  <audio id="SI-audio" src="./src/sounds/piano/SI.wav"></audio>
 
   <script src="./src/instruments/piano.js"></script>
-
 </body>
 </html>

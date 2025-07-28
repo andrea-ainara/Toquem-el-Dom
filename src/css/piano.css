@@ -26,6 +26,7 @@ body {
   outline: none;
 }
 
+/* Teclas blancas */
 .white-key {
   width: 120px;
   height: 500px;
@@ -49,6 +50,7 @@ body {
   margin-left: -4px;
 }
 
+/* Teclas negras */
 .black-key {
   border: #f0e8f1 solid 1px;
   width: 80px;
@@ -71,40 +73,29 @@ body {
   user-select: none;
 }
 
-.black-key[id="DOS"] { left: 90px; }
-.black-key[id="RES"] { left: 210px; }
-.black-key[id="FAS"] { left: 440px; }
-.black-key[id="SOLS"] { left: 570px; }
-.black-key[id="LAS"] { left: 690px; }
+/* Posición teclas negras */
+.black-key#DOS { left: 90px; }
+.black-key#RES { left: 210px; }
+.black-key#FAS { left: 440px; }
+.black-key#SOLS { left: 570px; }
+.black-key#LAS { left: 690px; }
 
-.note {
-  text-align: center;
-  line-height: 1.2;
-}
-
-.note small {
-  font-size: 15px;
-  color: #ccc;
-}
-
-.white-key.active,
-.white-key:active,
-.white-key:focus-visible {
+/* Efecto visual tecla activa */
+.white-key.active {
   background-color: #ddd;
-  transform: scale(1.01);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
   outline: none;
 }
 
-.black-key.active,
-.black-key:active,
-.black-key:focus-visible {
+.black-key.active {
   background-color: #444;
-  transform: scale(1.01);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.7);
   outline: none;
 }
 
+/* Para accesibilidad en foco */
 button:focus-visible {
   outline: 2px solid #fff;
   outline-offset: 2px;

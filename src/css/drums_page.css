@@ -101,6 +101,7 @@ main{
         padding: 0px;
     }
 
+
     #instrument_section{
         background-color: #932C2C;
         display: flex;
@@ -239,8 +240,14 @@ main{
         }
 
 
+
 }
 
+.noteActve{
+        filter: hue-rotate(60deg);  
+        filter: brightness(1.7);
+    }
+    
 footer{
     background-color: #808080;
     padding-top: 26px;

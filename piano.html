@@ -3,74 +3,123 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Teclado Musical</title>
+  <title>
+    Teclado Musical
+  </title>
+
   <link rel="stylesheet" href="./src/css/piano.css">
 </head>
+
 <body>
-  <div class="piano">
+  <main>
+    <section class="piano" aria-label="Teclado musical" role="region">
 
-       <button 
-         class="white-key" data-note="Do">Do
-        </button>
-        
-       <button 
-        class="black-key" data-note="Do#">
-      <div 
-      class="note">Do#<br><small>Re♭</small>
-    </div>
-    </button>
-    <button 
-    class="white-key" data-note="Re">Re
-    </button>
-    <button class="black-key" data-note="Re#">
-      <div 
-      class="note">Re#<br><small>Mi♭</small>
-      </div>
-    </button>
-    <button 
-    class="white-key" data-note="Mi">Mi
-  </button>
-    <button class="white-key" data-note="Fa">Fa
-    </button>
-    <button class="black-key" data-note="Fa#">
-      <div
-       class="note">Fa#<br>
-       <small>Sol♭</small>
-      </div>
-    </button>
+       <h1 
+          class="visually-hidden">Teclado Musical Interactivo
+       </h1>
 
-    <button class="white-key" data-note="Sol">Sol
+      <button 
+         class="white-key" id="Do" aria-label="Nota Do">Do
+      </button>
 
-    </button>
+      <button
+          class="black-key" id="DoS" aria-label="Nota Do sostenido">
+        <span 
+         class="note">Do#<br>
+        </span>
+      </button>
 
-    <button class="black-key" data-note="Sol#">
+      <button class="white-key" id="Re" aria-label="Nota Re">Re</button>
+      <button class="black-key" id="Re#" aria-label="Nota Re sostenido">
+        <span 
+          class="note">Re#<br>
+        </span>
+      </button>
 
-      <div 
-      class="note">Sol#<br><small>La♭</small>
-      </div>
+      <button 
+      class="white-key" id="Mi" aria-label="Nota Mi">Mi
+      </button>
 
-    </button>
+      <button
+       class="white-key" id="Fa" aria-label="Nota Fa">Fa
+      </button>
 
+      <button class="black-key" id="Fa#" aria-label="Nota Fa sostenido">
+        <span 
+        class="note">Fa#<br>
+        </span>
+      </button>
 
-    <button class="white-key" data-note="La">La
+      <button
+       class="white-key" id="Sol" aria-label="Nota Sol">Sol
+      </button>
 
-    </button>
+      <button class="black-key" id="Sol#" aria-label="Nota Sol sostenido">
+        <span class="note">Sol#<br></span>
+      </button>
 
+      <button
+       class="white-key" id="La" aria-label="Nota La">La
+      </button>
 
-    <button class="black-key" data-note="La#">
+      <button class="black-key" id="La#" aria-label="Nota La sostenido">
+        <span class="note">La#<br></span>
+      </button>
 
-      <div class="note">La#<br><small>Si♭</small>
-      </div>
+      <button 
+      class="white-key" id="Si" aria-label="Nota Si">Si
+      </button>
 
-    </button>
+    </section>
+  </main>
 
-    <button
-     class="white-key" data-note="Si">Si
+     <audio 
+       id="Do" src="./src/sounds/piano/do.wav">
+      </audio>
 
-    </button>
+      <audio 
+         id="Do#" src="./src/sounds/piano/dosostenido.wav">
+       </audio>
 
-  </div>
+    <audio
+    id="Re" src="./src/sounds/piano/Re.wav">
+    </audio>
 
-  <script src="./src/instruments/piano.js"></script>
+   <audio
+     id="Mi" src="./src/sounds/piano/MI.wav">
+    </audio>
+
+    <audio 
+    id="Fa" src="./src/sounds/piano/MIb.wav">
+    </audio>
+
+    <audio
+     id="Fa#" src="./src/sounds/piano/FA_piano-f.wav">
+    </audio>
+
+    <audio 
+     id="Sol" src="./src/sounds/piano/FAsostenido.wav">
+    </audio>
+    <audio 
+     id="Sol#" src="./src/sounds/piano/SOL.wav">
+     </audio>
+
+      <audio 
+      id="La" src="./src/sounds/piano/SOL_Sostenido.wav">
+      </audio>
+
+     <audio 
+       id="La#" src="./src/sounds/piano/si.wav">
+      </audio>
+
+        <audio 
+          id="Si" src="./src/sounds/piano/SIb.wav">
+        </audio>
+
+           <script 
+              src="./src/instruments/piano.js">
+            </script>
+
 </body>
+
 </html>

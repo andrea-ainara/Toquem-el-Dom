@@ -1,5 +1,5 @@
 body {
-  background-color: #822727; 
+  background-color: #822727;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,68 +8,104 @@ body {
   font-family: sans-serif;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .piano {
   position: relative;
   display: flex;
+  user-select: none;
+  outline: none;
 }
 
 .white-key {
-  width: 60px;
-  height: 250px;
+  width: 120px;
+  height: 500px;
   background: #f5f5f5;
-  border-radius: 4px;
-  margin: 0 1px;
-  position: relative;
+  border-radius: 10px;
+  border: #f9f5fa solid 1px;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding-bottom: 12px;
+  padding-bottom: 24px;
   font-weight: bold;
-  font-size: 16px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  z-index: 0;
+  font-size: 32px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
   cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.white-key + .white-key {
+  margin-left: -4px;
 }
 
 .black-key {
-  width: 40px;
-  height: 150px;
+  border: #f0e8f1 solid 1px;
+  width: 80px;
+  height: 300px;
   background: #000;
   color: white;
-  border: none;
-  border-radius: 6px;
+  border-radius: 22px;
   position: absolute;
   top: 0;
-  z-index: 2;
+  z-index: 10;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: 14px;
+  align-items: center;
+  font-size: 28px;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
   padding: 0 2px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  user-select: none;
 }
 
-.black-key[data-note="Do#"] { left: 45px; }
-.black-key[data-note="Re#"] { left: 105px; }
-.black-key[data-note="Fa#"] { left: 225px; }
-.black-key[data-note="Sol#"] { left: 285px; }
-.black-key[data-note="La#"] { left: 345px; }
+.black-key[id="Do#"] { left: 90px; }
+.black-key[id="Re#"] { left: 210px; }
+.black-key[id="Fa#"] { left: 440px; }
+.black-key[id="Sol#"] { left: 570px; }
+.black-key[id="La#"] { left: 690px; }
 
 .note {
   text-align: center;
   line-height: 1.2;
 }
+
 .note small {
-  font-size: 11px;
+  font-size: 15px;
   color: #ccc;
 }
 
-
 .white-key.active,
-.black-key.active {
-  background-color: #ccc;
-  transform: scale(0.97);
-  transition: all 0.1s ease;
+.white-key:active,
+.white-key:focus-visible {
+  background-color: #ddd;
+  transform: scale(1.01);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+.black-key.active,
+.black-key:active,
+.black-key:focus-visible {
+  background-color: #444;
+  transform: scale(1.01);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  outline: none;
+}
+
+button:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
 }

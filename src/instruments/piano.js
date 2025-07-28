@@ -1,19 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-
-  const keyMap = {
-    KeyA: 'DO',
-    KeyQ: 'DOS',
-    KeyS: 'RE',
-    KeyW: 'RES',
-    KeyD: 'MI',
-    KeyF: 'FA',
-    KeyE: 'FAS',
-    KeyG: 'SOL',
-    KeyR: 'SOLS',
-    KeyH: 'LA',
-    KeyT: 'LAS',
-    KeyJ: 'SI',
-  };
+  const keyCodes = ['KeyA', 'KeyQ', 'KeyS', 'KeyW', 'KeyD', 'KeyF', 'KeyE', 'KeyG', 'KeyR', 'KeyH', 'KeyT', 'KeyJ'];
+  const noteIds = ['DO', 'DOS', 'RE', 'RES', 'MI', 'FA', 'FAS', 'SOL', 'SOLS', 'LA', 'LAS', 'SI'];
 
   const activeTimeouts = new Map();
 
@@ -45,9 +32,10 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('keydown', (e) => {
     if (e.repeat) return;
 
-    const noteId = keyMap[e.code];
-    if (noteId) {
+    const index = keyCodes.indexOf(e.code);
+    if (index !== -1) {
       e.preventDefault();
+      const noteId = noteIds[index];
       playNote(noteId);
     }
   });

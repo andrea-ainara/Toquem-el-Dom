@@ -129,7 +129,7 @@ main{
     }
 
     .drum_piece:hover{
-        background-color:#e42727
+        backdrop-filter: brightness(1.5);
     }
 
     #hats_drums{
@@ -236,7 +236,7 @@ main{
         }
 
         #clap_drum_img:hover{
-            background-color: #e42727;
+            backdrop-filter: brightness(1.5);
         }
 
 
@@ -244,7 +244,7 @@ main{
 }
 
 .noteActve{
-        filter: hue-rotate(60deg);  
+        /* filter: hue-rotate(60deg);   */
         filter: brightness(1.7);
     }
     

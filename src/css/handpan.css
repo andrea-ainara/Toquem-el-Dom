@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+body {
+    background-color: #2F343A;
+    margin: 0;
+}
+article#handpanArticle {
+    background-color: #932C2C;
+    padding-bottom: 40px;
+    border-radius: 30px;
+    margin-left: 230px;
+    margin-right: 230px;
+    margin-top: 30px;
+    padding-top: 26px;
+    h1 {
+        text-align: center;
+        font-size: 60px;
+        margin: 0;
+        margin-bottom: 26px;
+        font-family: "Jersey 10", sans-serif;
+        font-weight: 400;
+        color: #FBC34B;
+    }
+}
+article#handpanInstrument {
+    background-color: #bf8035;
+    display: flexbox;
+    width: 320px;
+    height: 300px;
+    justify-self: center;
+    align-content: center;
+    border-radius: 64%;
+    .instrument-rowL {
+        display: grid;
+        grid-template-columns: 27% 40% 27%;
+        gap: 3px;
+        margin-top: 13px;
+        margin-bottom: 13px;
+        justify-content: center;
+        justify-items: center;
+        .noteC {
+            width: 90px;
+            height: 90px;
+            border-width: 13px;
+        }
+        button {
+            width: 67px;
+            height: 85px;
+        }
+    }
+    .instrument-rowS {
+        display: grid;
+        grid-template-columns: 30% 30%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        gap: 15px;
+        justify-content: center;
+        justify-items: center;
+        #D3note, #C5note {
+            rotate: -30deg;
+        }
+        #C4note, #E4note {
+            rotate: 30deg;
+        }
+    }
+    button {
+        width: 85px;
+        height: 67px;
+        padding: 0;
+        border-radius: 45px;
+        border-color: #795e3f;
+        border-style: solid;
+        border-width: 10px;
+        color: white;
+        font-family: "Jersey 10";
+        font-size: 30px;
+        background-color: #bf8035;
+    }
+    .noteActve {
+        background-color: #ed3c10;
+    }
+}
+.info {
+    h2 {
+        font-family: "Jersey 10", sans-serif;
+        font-weight: 400;
+        text-align: center;
+        font-size: 50px;
+        margin-top: 20px;
+        color: #932C2C;
+    }
+    p {
+        font-size: 35px;
+        margin: 12px;
+        font-family: "Jolly Lodger";
+    }
+    padding-top: 20px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 9px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    background-color: #FBC34B;
+}
+footer {
+    background-color: #808080;
+    padding-top: 26px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: "Jolly Lodger";
+    div {
+        display: flex;
+        justify-content: stretch;
+        border-width: 7px;
+        border-style: solid;
+        border-color: #FBC34B;
+        margin-bottom: 5px;
+    }
+    #contents {
+        display: grid;
+        grid-template-columns: 25% 40% 25%;
+        justify-items: center;
+    }
+}

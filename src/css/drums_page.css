@@ -9,13 +9,21 @@
 }
 header{
 
-    background-color: #808080;
+    background-color: #717579;
     color: white;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     margin: 0px;
     padding: 0px;
+
+    article{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0px;
+        padding: 0px;
+    }
 
     #resources_section{
         display: flex;
@@ -45,7 +53,36 @@ header{
 
     }
 
+    .page-icons {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #717579;
+
+    button {
+        background-color: transparent;
+        border: transparent;
+
+        img {
+            width: 100px;
+            height: 100px;
+
+        }
+
+        .piano-size {
+            width: 120px;
+            height: 100px
+        }
+
+        .panflute-size {
+            width: 200px;
+            height: 120px;
+
+        }
+
+    }
 }
+}
+
 
 main{
     background-color: #2F343A;

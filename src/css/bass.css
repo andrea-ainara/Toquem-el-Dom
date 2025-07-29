@@ -1,19 +1,207 @@
-body {
-    
-    background-color: #2F343A;
-    
-    .tittle{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #FBC34B;
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Jolly+Lodger&family=Manrope:wght@200..800&display=swap');
+
+
+main {
+    background-color: #932C2C;
+    border-radius: 3%;
+    margin: 5%;
+    height: 600px;
+
 }
 
-.didyouknow{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #FBC34B;
-    font: 200;
-    .paragraph{
+body {
+
+    background-color: #2F343A;
+
+    .tittle {
+        font-family: "jersey 10";
+        color: #FBC34B;
+        font-size: 50px;
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+
+
+    .bassstring1,
+    .bassstring2,
+    .bassstring3,
+    .bassstring4{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .btnbass {
+            background-color: #FBC34B;
+            color: black;
+            font-weight: 1000;
+            width: 120px;
+            height: 30px;
+            border-radius: 10%;
+            border: none;
+            margin: 1%;
+        }
+        .btnbass:active{
+            background-color: #c71717;
+        }
 
     }
+
+    
+     
 }
 
+
+.bassstring4 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .btnbass13 {
+        background-color: #FBC34B;
+        color: black;
+        font-weight: 1000;
+        width: 120px;
+        height: 30px;
+        border-radius: 10%;
+        border: none;
+        margin: 1%;
+    }
+
+    .btnbass14 {
+        background-color: #FBC34B;
+        color: black;
+        font-weight: 1000;
+        width: 120px;
+        height: 30px;
+        border-radius: 10%;
+        border: none;
+        margin: 1%;
+    }
+
+    .btnbass15 {
+        background-color: #FBC34B;
+        color: black;
+        font-weight: 1000;
+        width: 120px;
+        height: 30px;
+        border-radius: 10%;
+        border: none;
+        margin: 1%;
+    }
+
+    .btnbass16 {
+        background-color: #FBC34B;
+        color: black;
+        font-weight: 1000;
+        width: 120px;
+        height: 30px;
+        border-radius: 10%;
+        border: none;
+        margin: 1%;
+    }
+     :active {
+            background-color: #932C2C;
+        }
+}
+
+
+.noteActive {
+    color: aliceblue !important;
+    background-color: #c71717;
+    font-weight: 1000;
+    width: 120px;
+    height: 30px;
+    border-radius: 10%;
+    border: none;
+    margin: 1%;
+}
+
+.noteActive2 {
+    color: aliceblue !important;
+    background-color: #c71717;
+    font-weight: 1000;
+    width: 120px;
+    height: 30px;
+    border-radius: 10%;
+    border: none;
+    margin: 1%;
+}
+
+.container {
+
+    position: relative;
+    width: 50%;
+}
+
+
+.container img {
+    position: relative;
+    top: -170px;
+    left: 50px;
+    width: 1200px;
+
+}
+
+.container .bassstring1 {
+    position: relative;
+    top: -650px;
+    right: -500px;
+}
+
+.container .bassstring2 {
+    position: relative;
+    top: -630px;
+    right: -500px;
+}
+
+.container .bassstring3 {
+    position: relative;
+    top: -610px;
+    right: -500px;
+}
+
+.container .bassstring4 {
+    position: relative;
+    top: -590px;
+    right: -500px;
+}
+
+.historia {
+    background-color: #FBC34B;
+    margin: 5%;
+    border-radius: 3%;
+    height: 300px;
+
+    .didyouknow {
+        font-family: "jersey 10";
+        color: #932C2C;
+        font-size: 50px;
+        padding: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .paragraph {
+        font-size: 25px;
+        font-family: "jolly lodger";
+        height: 200px;
+        width: 900px;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: -110px;
+        right: -170px;
+
+
+    }
 }

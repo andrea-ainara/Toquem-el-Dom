@@ -26,7 +26,7 @@ body {
   outline: none;
 }
 
-/* Teclas blancas */
+
 .white-key {
   width: 120px;
   height: 500px;
@@ -50,7 +50,7 @@ body {
   margin-left: -4px;
 }
 
-/* Teclas negras */
+
 .black-key {
   border: #f0e8f1 solid 1px;
   width: 80px;
@@ -73,14 +73,14 @@ body {
   user-select: none;
 }
 
-/* Posición teclas negras */
+
 .black-key#DOS { left: 90px; }
 .black-key#RES { left: 210px; }
 .black-key#FAS { left: 440px; }
 .black-key#SOLS { left: 570px; }
 .black-key#LAS { left: 690px; }
 
-/* Efecto visual tecla activa */
+
 .white-key.active {
   background-color: #ddd;
   transform: scale(1.05);
@@ -95,8 +95,7 @@ body {
   outline: none;
 }
 
-/* Para accesibilidad en foco */
 button:focus-visible {
-  outline: 2px solid #fff;
+  outline: 5px solid #d34d97;
   outline-offset: 2px;
 }

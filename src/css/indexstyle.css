@@ -4,71 +4,154 @@ body {
     margin: 0;
     background-image: url(/src/img/yocuandopared.jpg);
 }
-article {
-    section:hover {
-        background-color: #ae3939;
+
+header{
+
+    background-color: #717579;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+
+    article{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0px;
+        padding: 0px;
     }
-    section {
-        margin: 18%;
-        margin-top: 7%;
-        margin-bottom: 7%;
-        background-color: #932C2C;
-        text-align: center;
-        border-radius: 30px;
-        h1, h2 {
-            font-size: 70px;
-            font-family: "Jersey 10";
-            font-weight: 400;
-            color: #FBC34B;
-            padding-top: 5px;
-            margin: 0;
-        }
-        a {
-            text-decoration: none;
-        }
-        p {
-            font-size: 42px;
-            font-family: "Jolly Lodger";
-            color: white;
-            padding-bottom: 8px;
-            margin-bottom: 0;
-        }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    #resources_section{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    #header_bar{
+        background-color: #FBC34B;
+        margin: 0px 100px 30px 0px;
+        padding: 3px 350px;
+        border-radius: 10px;
+    }
+
+    img{
+        width: 200px;
+        padding: 0px 40px;
+    }
+    h1{
+        font-family: "Jersey 10";
+        font-weight: lighter;
+        padding: 0px;
+        margin: 0px 100px 25px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .page-icons {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #717579;
+
+    button {
+        background-color: transparent;
+        border: transparent;
+
         img {
-            margin-top: 16px;
-            margin-bottom: 30px;
+            width: 100px;
+            height: 100px;
+
         }
-        .instr-icon {
-            width: 140px;
-            height: auto;
-            margin-bottom: 0;
+
+        .piano-size {
+            width: 120px;
+            height: 100px
         }
-        .thumbnail {
-            width: 60%;
-            height: 460px;
-            object-fit: cover;
-            margin-bottom: 50px;
-            border-radius: 18px;
+
+        .panflute-size {
+            width: 200px;
+            height: 120px;
+
+        }
+
+    }
+}
+}
+main{
+    article {
+        section:hover {
+            background-color: #ae3939;
+        }
+        section {
+            margin: 18%;
+            margin-top: 7%;
+            margin-bottom: 7%;
+            background-color: #932C2C;
+            text-align: center;
+            border-radius: 30px;
+            h1, h2 {
+                font-size: 70px;
+                font-family: "Jersey 10";
+                font-weight: 400;
+                color: #FBC34B;
+                padding-top: 5px;
+                margin: 0;
+            }
+            a {
+                text-decoration: none;
+            }
+            p {
+                font-size: 42px;
+                font-family: "Jolly Lodger";
+                color: white;
+                padding-bottom: 8px;
+                margin-bottom: 0;
+            }
+            img {
+                margin-top: 16px;
+                margin-bottom: 30px;
+            }
+            .instr-icon {
+                width: 140px;
+                height: auto;
+                margin-bottom: 0;
+            }
+            .thumbnail {
+                width: 60%;
+                height: 460px;
+                object-fit: cover;
+                margin-bottom: 50px;
+                border-radius: 18px;
+            }
         }
     }
 }
 footer {
-    background-color: #808080;
-    padding-top: 26px;
-    text-align: center;
-    color: white;
-    font-size: 30px;
-    font-family: "Jolly Lodger";
-    div {
-        display: flex;
-        justify-content: stretch;
-        border-width: 7px;
-        border-style: solid;
-        border-color: #FBC34B;
-        margin-bottom: 5px;
+        background-color: #808080;
+        padding-top: 26px;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        font-family: "Jolly Lodger";
+        div {
+            display: flex;
+            justify-content: stretch;
+            border-width: 7px;
+            border-style: solid;
+            border-color: #FBC34B;
+            margin-bottom: 5px;
+        }
+        #contents {
+            display: grid;
+            grid-template-columns: 25% 40% 25%;
+            justify-items: center;
+        }
     }
-    #contents {
-        display: grid;
-        grid-template-columns: 25% 40% 25%;
-        justify-items: center;
-    }
-}

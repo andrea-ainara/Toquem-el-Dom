@@ -4,75 +4,180 @@
 
 
 body {
-    background-color: #2F343A;
+    background-image: url(/src/img/yocuandopared.jpg);
 }
 
-.panflute-images {
+header{
 
-
+    background-color: #717579;
+    color: white;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    background-color: #932C2C;
-    margin: 20px;
-    height: 700px;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
 
-    button:active,
-    .btnActive {
-        background-color: rgb(50, 228, 14);
-        transform: translate(2px);
+    article{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0px;
+        padding: 0px;
+    }
 
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    #resources_section{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    #header_bar{
+        background-color: #FBC34B;
+        margin: 0px 100px 30px 0px;
+        padding: 3px 350px;
+        border-radius: 10px;
+    }
+
+    img{
+        width: 200px;
+        padding: 0px 40px;
+    }
+    h1{
+        font-family: "Jersey 10";
+        font-weight: lighter;
+        padding: 0px;
+        margin: 0px 100px 25px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .page-icons {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #717579;
+
+    button {
+        background-color: transparent;
+        border: transparent;
+
+        img {
+            width: 100px;
+            height: 100px;
+
+        }
+
+        .piano-size {
+            width: 120px;
+            height: 100px
+        }
+
+        .panflute-size {
+            width: 200px;
+            height: 120px;
+
+        }
 
     }
 }
-
-
-
-
-
-
-button {
-    background-color: transparent;
-    border: transparent;
-    gap: 0px;
-    border-width: 2px;
-    padding: 1px;
 }
 
+main{
+    .panflute-images {
 
 
-.main-page {
-    background-color: #932C2C;
-    text-align: center;
-    color: #FBC34B;
-    margin: 30px;
-    border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: #932C2C;
+        margin: 20px;
+        height: 700px;
 
+        button:active,
+        .btnActive {
+            background-color: rgb(50, 228, 14);
+            transform: translate(2px);
+
+
+        }
+    }
+
+
+
+
+
+
+    button {
+        background-color: transparent;
+        border: transparent;
+        gap: 0px;
+        border-width: 2px;
+        padding: 1px;
+    }
+
+
+
+    .main-page {
+        background-color: #932C2C;
+        text-align: center;
+        color: #FBC34B;
+        margin: 30px;
+        border-radius: 20px;
+
+    }
+
+    .panflute-texts {
+        font-family: "Jolly Lodger";
+        background-color: #FBC34B;
+        margin: 30px;
+        border-radius: 20px;
+        text-align: center;
+        height: 400px;
+        font-size: 35px;
+        padding: 50px;
+    }
+
+    h2 {
+        text-align: center;
+        color: #932C2C;
+        font-size: 50px;
+        font-family: "Jersey 10";
+        padding-bottom: 40px;
+
+    }
+
+    h1 {
+        height: 80px;
+        font-size: 60px;
+        padding-top: 36px;
+        font-family: "Jersey 10";
+    }
 }
 
-.panflute-texts {
-    font-family: "Jolly Lodger";
-    background-color: #FBC34B;
-    margin: 30px;
-    border-radius: 20px;
-    text-align: center;
-    height: 300px;
-    font-size: 35px;
-    padding: 50px;
-}
-
-h2 {
-    text-align: center;
-    color: #932C2C;
-    font-size: 50px;
-    font-family: "Jersey 10";
-    padding-bottom: 40px;
-
-}
-
-h1 {
-    height: 80px;
-    font-size: 60px;
-    padding-top: 36px;
-    font-family: "Jersey 10";
-}
+footer {
+        background-color: #808080;
+        padding-top: 26px;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        font-family: "Jolly Lodger";
+        div {
+            display: flex;
+            justify-content: stretch;
+            border-width: 7px;
+            border-style: solid;
+            border-color: #FBC34B;
+            margin-bottom: 5px;
+        }
+        #contents {
+            display: grid;
+            grid-template-columns: 25% 40% 25%;
+            justify-items: center;
+        }
+    }

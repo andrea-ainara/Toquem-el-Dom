@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+
+    background-color: #717579;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+
+    article{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    #resources_section{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    #header_bar{
+        background-color: #FBC34B;
+        margin: 0px 100px 30px 0px;
+        padding: 3px 350px;
+        border-radius: 10px;
+    }
+
+    img{
+        width: 200px;
+        padding: 0px 40px;
+    }
+    h1{
+        font-family: "Jersey 10";
+        font-weight: lighter;
+        padding: 0px;
+        margin: 0px 100px 25px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .page-icons {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #717579;
+
+    button {
+        background-color: transparent;
+        border: transparent;
+
+        img {
+            width: 100px;
+            height: 100px;
+
+        }
+
+        .piano-size {
+            width: 120px;
+            height: 100px
+        }
+
+        .panflute-size {
+            width: 200px;
+            height: 120px;
+
+        }
+
+    }
+}
+}
+
+main{
+    background-image: url(/src/img/yocuandopared.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h1{
+        color: #FBC34B;
+        font-family: "Jersey 10";
+        font-weight: normal;
+        font-size: 60px;
+        font-weight: 400;
+        padding-top: 5px;
+        margin: 0;
+    }
+
+    h2{
+        color: #932C2C;
+        font-family: "Jersey 10";
+        font-weight: normal;
+        font-size: 60px;
+        font-weight: 400;
+        padding-top: 5px;
+        margin: 0;
+    }
+
+    p{
+        color: #2F343A;
+        font-family: "Jolly Lodger";
+        font-size: 32px;
+        padding-bottom: 8px;
+        margin-bottom: 0;
+        padding-top: 5px;
+        margin: 0px 10%;
+        text-align: left;
+    }
+
+    article{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    div{
+        margin: -30px;
+        padding: 0px;
+    }
+
+    img{
+        margin: 0px;
+        padding: 0px;
+    }
+
+
+    #instrument_section{
+        background-color: #932C2C;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        margin: 20px;
+        padding: 2% 4%;
+        border-radius: 30px;
+    }
+    #info_section{
+        background-color: #FBC34B;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 2% 17%;
+        padding: 25px 0px;
+        border-radius: 30px;
+    }
+
+    .drum_piece{
+        border-radius: 20%;
+    }
+
+    .drum_piece:hover{
+        backdrop-filter: brightness(1.5);
+    }
+
+    #hats_drums{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 2% 10% -11%;
+
+    }
+    
+    #toms_drums{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0% 0% -15%;
+
+    }
+
+    #hihat_drums{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 0% 0% -5%;
+
+    }
+
+    #snare_drums{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0% 35% -24% 0%;
+
+    }
+
+    #floor_tom_drums{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0% 0% -8% 47%;
+
+    }
+
+    #kick_drums{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0% 0% -15% 7%;
+
+    }
+
+    #clap_drums{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: 0% 0% 0% 0%;
+
+    }
+
+        #cymbal_drum_img{
+            width: 190px;
+            height: 190px;
+        }
+
+        #ride_hat_drum_img{
+            width: 190px;
+            height: 190px;
+        }
+
+        #high_tom_drum_img{
+            width: 135px;
+            height: 135px;
+        }
+
+        #mid_tom_drum_img{
+            width: 175px;
+            height: 175px;
+        }
+
+        #hihat_drum_img{
+            width: 135px;
+            height: 135px;
+        }
+
+        #snare_drum_img{
+            width: 175px;
+            height: 175px;
+        }
+
+        #floor_tom_drum_img{
+            width: 180px;
+            height: 180px;
+        }
+
+        #kick_drum_img{
+            width: 200px;
+            height: 200px;
+        }
+
+        #clap_drum_img{
+            width: 95px;
+            height: auto;
+            border-radius: 25px;
+        }
+
+        #clap_drum_img:hover{
+            backdrop-filter: brightness(1.5);
+        }
+
+
+
+}
+
+.noteActve{
+        filter: brightness(1.7);
+    }
+    
+footer{
+    background-color: #808080;
+    padding-top: 26px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: "Jolly Lodger";
+    div {
+        display: flex;
+        justify-content: stretch;
+        border-width: 7px;
+        border-style: solid;
+        border-color: #FBC34B;
+        margin-bottom: 5px;
+    }
+    #contents {
+        display: grid;
+        grid-template-columns: 25% 40% 25%;
+        justify-items: center;
+    }
+}

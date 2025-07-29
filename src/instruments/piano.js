@@ -1,62 +1,46 @@
-const noteMap = {
-  "Do": "do",
-  "Do#": "do#",
-  "Re": "re",
-  "Re#": "re#",
-  "Mi": "mi",
-  "Fa": "fa",
-  "Fa#": "fa#",
-  "Sol": "sol",
-  "Sol#": "sol#",
-  "La": "la",
-  "La#": "la#",
-  "Si": "si",
-};
+document.addEventListener('DOMContentLoaded', () => {
+  const keyCodes = ['KeyA', 'KeyQ', 'KeyS', 'KeyW', 'KeyD', 'KeyF', 'KeyE', 'KeyG', 'KeyR', 'KeyH', 'KeyT', 'KeyJ'];
+  const noteIds = ['DO', 'DOS', 'RE', 'RES', 'MI', 'FA', 'FAS', 'SOL', 'SOLS', 'LA', 'LAS', 'SI'];
 
-const keyToNote = {
-  "a": "Do",
-  "w": "Do#",
-  "s": "Re",
-  "e": "Re#",
-  "d": "Mi",
-  "f": "Fa",
-  "t": "Fa#",
-  "g": "Sol",
-  "y": "Sol#",
-  "h": "La",
-  "u": "La#",
-  "j": "Si",
-};
+  const activeTimeouts = new Map();
 
-function playNote(note) {
-  const noteFile = noteMap[note];
-  if (!noteFile) return;
+  function playNote(noteId) {
+    const audio = document.getElementById(`${noteId}-audio`);
+    const key = document.getElementById(noteId);
 
-  const audio = new Audio(`sounds/${noteFile}.wav`);
-  audio.currentTime = 0;
-  audio.play();
-}
+    if (!audio) return;
 
-document.querySelectorAll('.piano button').forEach(button => {
-  button.addEventListener('click', () => {
-    const note = button.dataset.note;
-    playNote(note);
+    audio.currentTime = 0;
+    audio.play();
 
-    button.classList.add('active');
-    setTimeout(() => button.classList.remove('active'), 100);
-  });
-});
+    if (key) {
+      key.classList.add('active');
 
-document.addEventListener('keydown', (event) => {
-  const key = event.key.toLowerCase();
-  const note = keyToNote[key];
-  if (note) {
-    playNote(note);
+      if (activeTimeouts.has(key)) {
+        clearTimeout(activeTimeouts.get(key));
+      }
 
-    const btn = document.querySelector(`[data-note="${note}"]`);
-    if (btn) {
-      btn.classList.add('active');
-      setTimeout(() => btn.classList.remove('active'), 100);
+      const timeoutId = setTimeout(() => {
+        key.classList.remove('active');
+        activeTimeouts.delete(key);
+      }, 150);
+
+      activeTimeouts.set(key, timeoutId);
     }
   }
+
+  window.addEventListener('keydown', (e) => {
+    if (e.repeat) return;
+
+    const index = keyCodes.indexOf(e.code);
+    if (index !== -1) {
+      e.preventDefault();
+      const noteId = noteIds[index];
+      playNote(noteId);
+    }
+  });
+
+  document.querySelectorAll('.white-key, .black-key').forEach((btn) => {
+    btn.addEventListener('click', () => playNote(btn.id));
+  });
 });

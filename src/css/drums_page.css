@@ -25,6 +25,11 @@ header{
         padding: 0px;
     }
 
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
     #resources_section{
         display: flex;
         flex-direction: column;
@@ -83,9 +88,8 @@ header{
 }
 }
 
-
 main{
-    background-color: #2F343A;
+    background-image: url(/src/img/yocuandopared.jpg);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -281,7 +285,6 @@ main{
 }
 
 .noteActve{
-        /* filter: hue-rotate(60deg);   */
         filter: brightness(1.7);
     }
     

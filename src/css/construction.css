@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Jolly+Lodger&family=Manrope:wght@200..800&display=swap');
+
+body {
+    background-image: url(/src/img/yocuandopared.jpg);
+}
+
+header{
+
+    background-color: #717579;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+
+    article{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    #resources_section{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    #header_bar{
+        background-color: #FBC34B;
+        margin: 0px 100px 30px 0px;
+        padding: 3px 350px;
+        border-radius: 10px;
+    }
+
+    img{
+        width: 200px;
+        padding: 0px 40px;
+    }
+    h1{
+        font-family: "Jersey 10";
+        font-weight: lighter;
+        padding: 0px;
+        margin: 0px 100px 25px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .page-icons {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #717579;
+
+    button {
+        background-color: transparent;
+        border: transparent;
+
+        img {
+            width: 100px;
+            height: 100px;
+
+        }
+
+        .piano-size {
+            width: 120px;
+            height: 100px
+        }
+
+        .panflute-size {
+            width: 200px;
+            height: 120px;
+
+        }
+
+    }
+}
+}
+
+main{
+    article {
+        background-color: #932C2C;
+        margin: 13.2%;
+        margin-top: 4%;
+        border-radius: 24px;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h1 {
+        font-family: "Jersey 10";
+        font-weight: 400;
+        font-size: 60px;
+        color: #FBC34B;
+    }
+    p {
+        font-size: 30px;
+        font-family: "Jolly Lodger";
+        padding-bottom: 30px;
+        color: white
+    }
+    img {
+        width: 56%;
+    }
+}
+
+footer{
+    background-color: #808080;
+    padding-top: 26px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: "Jolly Lodger";
+    div {
+        display: flex;
+        justify-content: stretch;
+        border-width: 7px;
+        border-style: solid;
+        border-color: #FBC34B;
+        margin-bottom: 5px;
+    }
+    #contents {
+        display: grid;
+        grid-template-columns: 25% 40% 25%;
+        justify-items: center;
+    }
+}
